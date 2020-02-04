@@ -5,6 +5,7 @@
 #include <time.h>
 #include <math.h>
 #include <ctime>
+#include<string>
 using namespace std;
 void HW1a();
 void HW1b();
@@ -44,7 +45,7 @@ void HW1a()
 }
 void HW1b()
 {
-
+    
 }
 void HW1c()
 {
