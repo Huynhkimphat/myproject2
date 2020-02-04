@@ -1,4 +1,9 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
 #include <iostream>
+#include <time.h>
+#include <math.h>
 #include <ctime>
 using namespace std;
 void HW1a();
@@ -31,14 +36,11 @@ int main() {
 }
 void HW1a()
 {
-    /*
     // current date/time based on current system
     time_t now = time(0);
-
-    // convert now to string form
     char* dt = ctime(&now);
 
-    cout << "The local date and time is: " << dt << endl;*/
+    cout << "The local date and time is: " << dt << endl;
 }
 void HW1b()
 {
@@ -64,5 +66,15 @@ void HW1d()
 }
 void HW1e()
 {
-
+    float x1, x2, y1, y2;
+    cout << "First Point: ";
+    cin >> x1;
+    cin >> y1;
+    cout << "Second Point ";
+    cin >> x2;
+    cin >> y2;
+    float a = (x2 - x1)*(x2 - x1);
+    float b = (y2 - y1) * (y2 - y1);
+    float k = sqrt(a + b);
+    cout << k;
 }
