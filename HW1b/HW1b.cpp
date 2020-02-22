@@ -11,12 +11,12 @@ int main()
     int x = 0, y = 0, z = 0, w = 0;
     for (int i = 0; i < strlen(a); i++)
     {
-        if (a[i] >= '1' && a[i] <= '9')
+        if (a[i] >= '0' && a[i] <= '9')
         {
             int t = a[i] - '0';
             y = y * 10 + t;
         }
-        if (w == 0)
+        if ((w == 0 && a[i] == '+') || (w == 0 && a[i] == '-'))
         {
             x = y; w = 1; y = 0;
         }
